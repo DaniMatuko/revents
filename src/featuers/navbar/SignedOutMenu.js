@@ -8,8 +8,8 @@ const SignedOutMenu = ({ setAuthenticated, authenticated }) => {
 				<img src="/assets/logo.png" alt="logo" style={{ marginRight: 15 }} />
 				Re-vents
 			</Menu.Item>
-
 			<Menu.Item as={NavLink} to="/events" name="Events" />
+			<Menu.Item as={NavLink} to="/sandbox" name="sandbox" />
 			{authenticated && (
 				<Menu.Item as={NavLink} to="/create-event">
 					<Button positive inverted content="Create Event" />
